@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora de Ritmo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1>Calculadora de Ritmo</h1>
+			<div id="info">
+				<!-- <div id="pace">	
+					<h3>Ritmo:</h3> 
+						<ul class="listing" id="pace-list">
+                            <li class="pace input-list">Minutos/km:<input type="number" name="paceH" id="paceHour" class="info"></li>
+						</ul>
+						<p></p>
+				</div> -->
+
+				<div id="distance">
+					<h3>Distancia:</h3>
+					<ul class="listing" id="dist-list">
+						<li class="dist input-list">Kms: <input type="number" name="dis" id="dist" class="info"></li>
+					</ul>
+					<p></p>
+				</div>
+
+				<div id="totalTime">
+					<h3>Tiempo Total:</h3>
+					<ul class="listing" id="tt-list">
+						<li class="ttime input-list">Tiempo: <input type="number" name="totaltH" id="ttHour"
+								class="info"></li>
+						<li class="ttime input-list">: <input type="number" name="totaltM" id="ttMin" class="info"></li>
+						<li class="ttime input-list">: <input type="number" name="totaltS" id="ttSec" class="info"></li>
+					</ul>
+					<p></p>
+				</div>
+
+			</div>
+
+			<div id="b">
+				<input type="button" class="button" id="runButton" value="Calcular">
+				<input type="reset" class="button" id="resetButton" value="Reiniciar">
+			</div>
+
+			<div>
+				<h3>Resultado:</h3>
+				<div id="result"></div>
+				<h3>Ultimos 3 ingresos:</h3>
+				<ul id="ingresos">
+					<li class="list-item"></li>
+					<li class="list-item"></li>
+					<li class="list-item"></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<script src="script.js"></script>
+</body>
+
+</html>
